@@ -47,7 +47,7 @@ function Home() {
                 <div className='home--row'>
                     <Product
                         id="05"
-                        title="Black Dial Men's Watch and Wayfarer Sunglasses"
+                        title="Black Dial Men's Watch & Wayfarer Sunglasses"
                         price={300}
                         image="https://m.media-amazon.com/images/I/81SbqrhpsOL._UL1500_.jpg"
                     />

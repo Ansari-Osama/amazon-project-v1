@@ -39,17 +39,17 @@ function Home() {
 
                     <Product
                         id="05"
-                        title="Mi 80 cm (32 inches) HD"
-                        price={16999}
-                        image="https://m.media-amazon.com/images/I/81rONKWm24L._SL1500_.jpg"
+                        title="Apple MacBook Pro"
+                        price={108990}
+                        image="https://m.media-amazon.com/images/I/71an9eiBxpL._SL1500_.jpg"
                     />
                 </div>
                 <div className='home--row'>
                     <Product
                         id="05"
-                        title="Echo Dot (3rd Gen)"
-                        price={3450}
-                        image="https://m.media-amazon.com/images/I/61WUqJd4dfS._SL1000_.jpg"
+                        title="Black Dial Men's Watch and Wayfarer Sunglasses"
+                        price={300}
+                        image="https://m.media-amazon.com/images/I/81SbqrhpsOL._UL1500_.jpg"
                     />
                 </div>
             </div>

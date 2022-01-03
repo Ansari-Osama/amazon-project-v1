@@ -6,11 +6,11 @@ import { Link } from 'react-router-dom';
 import { useStateValue } from './StateProvider';
 
 function Header() {
-    const [{cart}, dispatch] = useStateValue();
+    const [{ cart, user }, dispatch] = useStateValue();
     return (
         <div className='header'>
             <Link to='/'>
-            <img className='header--logo' src='http://pngimg.com/uploads/amazon/amazon_PNG11.png' alt='Amazon Logo' />
+                <img className='header--logo' src='http://pngimg.com/uploads/amazon/amazon_PNG11.png' alt='Amazon Logo' />
             </Link>
 
             <div className='header--search'>
@@ -19,10 +19,12 @@ function Header() {
             </div>
 
             <div className='header--nav'>
-                <div className='header--option'>
-                    <span className='header--optionLineOne'>Hello Guest</span>
-                    <span className='header--optionLineTwo'>SignIn</span>
-                </div>
+                <Link className='link' to='/login'>
+                    <div className='header--option'>
+                        <span className='header--optionLineOne'>Hello Guest</span>
+                        <span className='header--optionLineTwo'>{user ? 'Sign Out' : 'Sign In'}</span>
+                    </div>
+                </Link>
 
                 <div className='header--option'>
                     <span className='header--optionLineOne'>Retun</span>
@@ -35,11 +37,11 @@ function Header() {
                 </div>
             </div>
 
-           <Link to='/checkout'>
-            <div className='header--optionBasket'>
-                <ShoppingCartIcon />
-                <span className='header--optionLineTwo header--basketCount'>{cart?.length}</span>
-            </div>
+            <Link to='/checkout'>
+                <div className='header--optionBasket'>
+                    <ShoppingCartIcon />
+                    <span className='header--optionLineTwo header--basketCount'>{cart?.length}</span>
+                </div>
             </Link>
         </div>
     )

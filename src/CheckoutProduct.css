@@ -27,3 +27,24 @@
     font-size: 18px;
     font-weight: 700;
 }
+
+.checkoutProduct .checkoutProduct--info button {
+    width: 150px;
+    height: 30px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.checkoutProduct .checkoutProduct--info button:hover {
+    border: 2px solid black;
+    transform: scale(1.05);
+    transition: 0.5s ease-in-out;
+    transition-delay: 0.1s;
+}
+
+.checkoutProduct .checkoutProduct--info button:active {
+    border: none;
+    transform: scale(1.05);
+    transition: 0.5s ease-in-out;
+    transition-delay: 0.1s;
+}

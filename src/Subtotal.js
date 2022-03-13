@@ -20,11 +20,11 @@ function Subtotal() {
                         </small>
                     </>
                 )}
-                decimalScale = {2}
-                value = {getCartTotal(cart)}
-                displayType = {"text"}
-                thousandSeparator = {true}
-                prefix = {"₹"}
+                decimalScale={2}
+                value={getCartTotal(cart)}
+                displayType={"text"}
+                thousandSeparator={true}
+                prefix={"₹"}
             />
             <button onClick={e => history.push('/payment')}>Proceed to Buy</button>
         </div>

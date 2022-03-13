@@ -1,3 +1,13 @@
+/* .allHeader{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    height: 60px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+} */
+
 .header{
     background-color: black;
     display: flex;
@@ -69,4 +79,110 @@
 
 .link{
     text-decoration: none;
+}
+
+.mobile--search{
+    display: none;
+}
+
+@media (max-width: 480px) {
+    .allHeader {
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 85px;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+    }
+
+
+    .header{
+        background-color: rgb(0, 0, 0);
+        display: flex;
+        align-items: center;
+        height: 90px;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+    } 
+
+    .mobile--search {
+        width: 100%;
+        display: flex;
+        flex: 1;
+        align-items: center;
+        padding-top: 10px;
+        padding-bottom: 30px;
+    }
+
+    .mobile--searchInput{
+        margin-left: 20px;
+        padding: 08px;
+        height: 10px;
+        border: none;
+        width: 500px;
+    }
+
+    .mobile--searchIcon{
+        margin-right: 20px;
+        background-color: #F3A847;
+        padding: 1px;
+        height: 15px;
+    }
+
+    .header--search{
+        display: none;
+    }
+
+    .header--logo{
+        width: 50px;
+        margin-top: 10px;
+        margin-left: 40px;
+        object-fit: contain;   
+    }
+
+    
+.header--nav{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 5px;
+}
+
+.header--option{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.header--optionLineOne{
+    font-size: 8px;
+    margin-left: 5px;
+}
+
+.header--optionLineTwo{
+    font-size: 10px;
+    font-weight: 500;
+    margin-left: 5px;
+}
+
+    .header--optionBasket{
+        color: white;
+        display: flex;
+        align-items: center;
+        /* margin-left: 5px; */
+        margin-top: 5px;
+    }
+
+    .header--basketCount{
+        /* margin-right: 5px;
+        margin-left: 5px; */
+    }
+
+.link{
+    text-decoration: none;
+}
 }

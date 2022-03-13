@@ -5,15 +5,15 @@ export const initialState = {
 };
 
 //Selector
-export const getCartTotal = (cart) => 
-    cart?.reduce((amount, item)=> amount + item.price, 0);
-       
+export const getCartTotal = (cart) =>
+    cart?.reduce((amount, item) => amount + item.price, 0);
+
 
 const reducer = (state, action) => {
     console.log(action);
     switch (action.type) {
         case "ADD_TO_CART":
-            return{
+            return {
                 ...state,
                 cart: [...state.cart, action.item],
             };
@@ -22,21 +22,26 @@ const reducer = (state, action) => {
 
             let newCart = [...state.cart];
 
-            if(index >=0)
-            {
-                newCart.splice(index,1);
-            } else{
+            if (index >= 0) {
+                newCart.splice(index, 1);
+            } else {
                 console.warn('Cant remove, as cart is Empty')
             }
-            return{
+            return {
                 ...state,
                 cart: newCart
             }
 
         case "SET_USER":
-            return{
+            return {
                 ...state,
                 user: action.user
+            }
+
+        case 'EMPTY_CART':
+            return {
+                ...state,
+                cart: []
             }
 
         default:

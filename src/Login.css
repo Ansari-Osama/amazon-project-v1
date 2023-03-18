@@ -1,20 +1,21 @@
-.login{
+.login {
     height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.login--logo{
+.login--logo {
     margin-top: 20px;
     margin-bottom: 20px;
-    object-fit: contain;
-    width: 100px;
+    object-fit: cover;
+    width: 150px;
+    height: 150px;
     margin-left: auto;
     margin-right: auto;
 }
 
-.login--container{
+.login--container {
     width: 300px;
     height: fit-content;
     display: flex;
@@ -24,28 +25,28 @@
     padding: 20px;
 }
 
-.login--container h1{
+.login--container h1 {
     font-weight: 500;
     margin-bottom: 20px;
 }
 
-.login--container h5{
+.login--container h5 {
     margin-bottom: 5px;
 }
 
-.login--container input{
+.login--container input {
     height: 30px;
     margin-bottom: 10px;
     width: 95%;
     background-color: white;
 }
 
-.login--container p{
+.login--container p {
     margin-top: 15px;
     font-size: 12px;
 }
 
-.login--signButton{
+.login--signButton {
     background-color: #f0c14b;
     border: 2px solid black;
     border-radius: 10px;
@@ -54,7 +55,7 @@
     margin-top: 10px;
 }
 
-.login--registerButton{
+.login--registerButton {
     width: 100%;
     height: 30px;
     border: 2px solid black;

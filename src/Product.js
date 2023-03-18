@@ -1,9 +1,11 @@
 import React from 'react'
 import './Product.css'
 import { useStateValue } from './StateProvider'
+import ProductInfo from './ProductInfo';
+import { Link } from 'react-router-dom';
 
 function Product({ id, title, price, image }) {
-    const [ {cart}, dispatch] = useStateValue();
+    const [{ cart }, dispatch] = useStateValue();
 
     const addToCart = () => {
         dispatch({
@@ -28,7 +30,9 @@ function Product({ id, title, price, image }) {
                 </p>
                 <img className='product--image' src={image} alt='See U in C' />
             </div>
-            <button className='product--button' onClick={addToCart} >Add to Cart</button>
+            <Link to="/productInfo">
+                <button className='product--button' onClick={addToCart} >Add to Cart</button>
+            </Link>
         </div>
     )
 }

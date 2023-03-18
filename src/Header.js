@@ -5,6 +5,7 @@ import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import { Link } from 'react-router-dom';
 import { useStateValue } from './StateProvider';
 import { auth } from './firebase';
+import logo1 from './assets/logo1.jpeg';
 
 function Header() {
 
@@ -18,7 +19,9 @@ function Header() {
         <div className='allHeader'>
             <div className='header'>
                 <Link to='/'>
-                    <img className='header--logo' src='http://pngimg.com/uploads/amazon/amazon_PNG11.png' alt='Amazon Logo' />
+                    {/* <img className='header--logo' src='http://pngimg.com/uploads/amazon/amazon_PNG11.png' alt='Amazon Logo' /> */}
+
+                    <img className='header--logo' src={logo1} alt='Amazon Logo' />
                 </Link>
 
                 <div className='header--search'>
@@ -52,11 +55,11 @@ function Header() {
                     </div>
                 </Link>
             </div>
-                
-                <div className='mobile--search'>
-                    <input className='mobile--searchInput type=' text />
-                    <SearchIcon className='mobile--searchIcon' />
-                </div>
+
+            <div className='mobile--search'>
+                <input className='mobile--searchInput type=' text />
+                <SearchIcon className='mobile--searchIcon' />
+            </div>
 
         </div>
     )

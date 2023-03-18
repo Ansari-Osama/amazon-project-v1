@@ -1,0 +1,536 @@
+.productInfo {
+    display: flex;
+}
+
+.productInfo--left {
+    display: block;
+    width: 35%;
+    text-align: left;
+    margin-left: 40px;
+    margin-top: 20px;
+    align-items: center;
+}
+
+.productInfo--left .produtInfo--image {
+    width: 400px;
+    height: 400px;
+    border: 1px solid black;
+}
+
+.productInfo--right {
+    width: 50%;
+    text-align: left;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+.productInfo--right .productIno--content {
+    margin-top: 20px;
+    display: block;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.productInfo--right .quantity {
+    display: flex;
+}
+
+.quantity {
+    text-align: center;
+    align-items: center;
+}
+
+.quantity p {
+    margin-right: 20px;
+}
+
+.productInfo--right .quantity input {
+    width: 20px;
+    height: 100%;
+    line-height: 40px;
+    margin-top: 12px;
+}
+
+.productInfo--buttons .btn--buy {
+    background-color: #28e1bd;
+    color: white;
+    padding: 10px;
+    margin-right: 20px;
+    width: 120px;
+    border: none;
+    border-radius: 5px;
+}
+
+.productInfo--buttons .btn--addToCart {
+    background-color: #ed763b;
+    color: white;
+    padding: 10px;
+    margin-right: 20px;
+    width: 120px;
+    border: none;
+    border-radius: 5px;
+}
+
+.btn--addToCart:active {
+    background-color: #28e1bd;
+}
+
+.btn--buy:active {
+    background-color: #ed763b;
+}
+
+.quantity--count {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+/* .productInfo--color{
+      display: flex;
+      align-items: center;
+      text-align: center;
+  } */
+
+.productInfo--color input {
+    margin-left: 5px;
+    margin-right: 7px;
+}
+
+/* Media Query for Mobile Devices */
+
+@media (max-width: 480px) {
+    .productInfo {
+        display: flex;
+    }
+
+    .productInfo--left {
+        display: block;
+        width: 35%;
+        text-align: left;
+        margin-left: 10px;
+        margin-top: 10px;
+        align-items: center;
+    }
+
+    .productInfo--left .produtInfo--image {
+        width: 100px;
+        height: 100px;
+        border: 1px solid black;
+        border-radius: 5px;
+    }
+
+    .productInfo--right {
+        width: 65%;
+        text-align: left;
+        padding-left: 15px;
+        margin-top: 5px;
+    }
+
+    .productInfo--content {
+        display: block;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+        font-size: 14px;
+    }
+
+    .product_title {
+        text-align: left;
+        font-size: 16px;
+        padding-bottom: 5px;
+    }
+
+    .productInfo--right .quantity {
+        display: flex;
+    }
+
+    .quantity {
+        text-align: center;
+        align-items: center;
+    }
+
+    .productInfo--right .quantity input {
+        width: 20px;
+        height: 100%;
+        line-height: 40px;
+        margin-top: 12px;
+    }
+
+    .productInfo--buttons {
+        display: flex;
+        margin-top: 20px;
+        justify-content: space-evenly;
+    }
+
+    .productInfo--buttons .buy {
+        background-color: #34495e;
+        color: white;
+        border: none;
+        padding: 10px 15px;
+        font-size: 10px;
+        border-radius: 4px;
+    }
+
+    .productInfo--buttons .addToCart {
+        background-color: #34495e;
+        color: white;
+        border: none;
+        padding: 10px 10px;
+        border-radius: 4px;
+        font-size: 10px;
+    }
+
+    .addToCart:active {
+        background-color: #34495e;
+    }
+
+    .buy:active {
+        background-color: #34495e;
+    }
+
+    .productInfo--color {
+        display: flex;
+        margin-top: 10px;
+    }
+
+    .select_color {
+        margin-top: 10px;
+        align-items: center;
+        column-count: 3;
+    }
+
+    .productInfo--color input {
+        margin-left: 5px;
+        margin-right: 7px;
+    }
+}
+
+/* Media Query for low resolution  Tablets, Ipads */
+@media screen and (min-width: 480px) and (max-width: 768px) {
+    .productInfo {
+        display: flex;
+    }
+
+    .productInfo--left {
+        display: block;
+        width: 35%;
+        text-align: left;
+        margin-left: 20px;
+        margin-top: 20px;
+        align-items: center;
+    }
+
+    .productInfo--left .produtInfo--image {
+        width: 130px;
+        height: 130px;
+        border: 1px solid black;
+        border-radius: 5px;
+    }
+
+    .productInfo--right {
+        width: 65%;
+        text-align: left;
+        padding-left: 15px;
+        margin-top: 15px;
+    }
+
+    .productInfo--content {
+        display: block;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+        font-size: 0.7rem;
+    }
+
+    .product_title {
+        text-align: left;
+        font-size: 0.9rem;
+        padding-bottom: 5px;
+    }
+
+    .productInfo--right .quantity {
+        display: flex;
+    }
+
+    .quantity {
+        text-align: center;
+        align-items: center;
+    }
+
+    .productInfo--right .quantity input {
+        width: 20px;
+        height: 100%;
+        margin-top: 12px;
+    }
+
+    .productInfo--buttons {
+        display: flex;
+        margin-top: 20px;
+        justify-content: space-evenly;
+    }
+
+    .productInfo--buttons .buy {
+        background-color: #34495e;
+        color: white;
+        border: none;
+        padding: 10px 15px;
+        font-size: 10px;
+        border-radius: 4px;
+    }
+
+    .productInfo--buttons .addToCart {
+        background-color: #34495e;
+        color: white;
+        border: none;
+        padding: 10px 10px;
+        border-radius: 4px;
+        font-size: 10px;
+    }
+
+    .addToCart:active {
+        background-color: #34495e;
+    }
+
+    .buy:active {
+        background-color: #34495e;
+    }
+
+    .productInfo--color {
+        display: flex;
+        margin-top: 10px;
+    }
+
+    .select_color {
+        margin-top: 10px;
+        align-items: center;
+        column-count: 3;
+    }
+
+    .productInfo--color input {
+        margin-left: 5px;
+        margin-right: 7px;
+    }
+}
+
+/* Media Query for Tablets Ipads portrait mode */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .productInfo {
+        display: flex;
+        justify-content: center;
+    }
+
+    .productInfo--left {
+        display: block;
+        margin-top: 20px;
+        align-items: center;
+    }
+
+    .productInfo--left .produtInfo--image {
+        width: 200px;
+        height: 200px;
+        border: 1px solid black;
+        border-radius: 5px;
+    }
+
+    .productInfo--right {
+        text-align: left;
+        margin-top: 15px;
+    }
+
+    .productInfo--content {
+        display: block;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .productInfo--content p {
+        padding-top: 8px;
+        font-size: 1rem;
+    }
+
+    .product_title {
+        text-align: left;
+        font-size: 1.5rem;
+        padding-bottom: 5px;
+    }
+
+    .productInfo--right .quantity {
+        display: flex;
+    }
+
+    .quantity {
+        text-align: center;
+        align-items: center;
+    }
+
+    .productInfo--right .quantity input {
+        width: 20px;
+        height: 100%;
+        margin-top: 12px;
+    }
+
+    .productInfo--buttons {
+        display: flex;
+        margin-top: 20px;
+        justify-content: center;
+    }
+
+    .productInfo--buttons .buy {
+        background-color: #34495e;
+        color: white;
+        border: none;
+        padding: 15px 15px;
+        font-size: 10px;
+        margin-right: 20px;
+        border-radius: 4px;
+    }
+
+    .productInfo--buttons .addToCart {
+        background-color: #34495e;
+        color: white;
+        border: none;
+        padding: 15px 15px;
+        border-radius: 4px;
+        margin-left: 10px;
+        font-size: 10px;
+    }
+
+    .addToCart:active {
+        background-color: #34495e;
+    }
+
+    .buy:active {
+        background-color: #34495e;
+    }
+
+    .productInfo--color {
+        display: flex;
+        margin-top: 10px;
+    }
+
+    .select_color {
+        align-items: center;
+        display: flex;
+    }
+
+    .productInfo--color input {
+        margin-left: 10px;
+        margin-right: 5px;
+        margin-top: 15px;
+    }
+}
+
+/* Media Query for Laptops and Desktops */
+@media (min-width: 1024px) and (max-width: 1280px) {}
+
+/* Media Query for Large screens */
+@media (min-width: 1280px) {
+    .productInfo {
+        display: flex;
+        justify-content: center;
+    }
+
+    .productInfo--left {
+        display: block;
+        text-align: left;
+        align-items: center;
+    }
+
+    .productInfo--left .produtInfo--image {
+        width: 250px;
+        height: 250px;
+        object-fit: contain;
+        border: 1px solid black;
+        border-radius: 10px;
+    }
+
+    .productInfo--right {
+        text-align: left;
+    }
+
+    .productInfo--content {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        /* font-size: 1rem; */
+    }
+
+    .product_title {
+        text-align: left;
+        font-size: 2rem;
+        padding-bottom: 5px;
+    }
+
+    .productInfo--content p {
+        padding-top: 8px;
+        font-size: 1.4rem;
+    }
+
+    .productInfo--right .quantity {
+        display: flex;
+    }
+
+    .quantity {
+        text-align: center;
+        align-items: center;
+    }
+
+    .productInfo--right .quantity input {
+        width: 20px;
+        height: 100%;
+        margin-top: 12px;
+    }
+
+    .productInfo--buttons {
+        display: flex;
+        margin-top: 20px;
+        justify-content: left;
+    }
+
+    .productInfo--buttons .buy {
+        background-color: #34495e;
+        color: white;
+        border: none;
+        padding: 10px 15px;
+        font-size: 10px;
+        margin-right: 20px;
+        border-radius: 4px;
+    }
+
+    .productInfo--buttons .addToCart {
+        background-color: #34495e;
+        color: white;
+        border: none;
+        margin-left: 20px;
+        padding: 10px 10px;
+        border-radius: 4px;
+        font-size: 10px;
+    }
+
+    .addToCart:active {
+        background-color: #34495e;
+    }
+
+    .buy:active {
+        background-color: #34495e;
+    }
+
+    .productInfo--color {
+        display: flex;
+        margin-top: 10px;
+    }
+
+    .select_color {
+        align-items: center;
+        text-align: center;
+        display: flex;
+        /* column-count: 3; */
+    }
+
+    .productInfo--color input {
+        margin-left: 20px;
+        margin-right: 7px;
+        margin-top: 15px;
+        size: 20px;
+    }
+}
